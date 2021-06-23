@@ -13,7 +13,7 @@
 }
 
 .logotipo {
-    border-radius: 245px;
+    border-radius: 290px;
 }
 
 .navegacao {
@@ -49,4 +49,15 @@
 
 .nav-item a {
     height: 55px;
+}
+
+
+/* Configurações Gerais (usadas em outras páginas) */
+
+.texto-colorido {
+    color: var(--azul-escuro)
+}
+
+.bg-lucido {
+    background-color: var(--cinza-escuro);
 }
