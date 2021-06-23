@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>Estagio</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="javascript/index.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<!-- HOME QUEM SOMOS CANDIDATOS/MINHA AREA VAGAS DÚVIDAS -->
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light navegacao">
+        <!--Logo-->
+        <a class="navbar-brand p-2" href=""><img src="images/meu-estagio.png" class="logotipo" width="100px"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Navegação-->
+        <div class="collapse navbar-collapse" id="navegacao3">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown m-3 m-sm-0">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Candidato</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="vagas.html">Vagas</a>
+                        <a class="dropdown-item" href="duvidas.html">Dúvidas</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quemSomos.html">Quem Somos</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <main>
+        <!-- Início Cadastro -->
+
+        <div class="container" id="cadastro">
+            <div class="text-center m-3 display-4 titulos">Cadastre-se</div>
+            <div class="row mb-5">
+
+                <div class="col-12 col-lg-6" id="bloco_formulario">
+                    <div id="formulario" action="#">
+                        <h1 class="text-center">Dados Pessoais:</h1>
+
+                        <label for="nome">Nome completo</label> <br>
+                        <input class="form-control respostas" id="name_input" type="text" name="nome" placeholder="Nome completo" onblur="return validaNome(this);" required>
+
+                        <div class="d-flex">
+
+                            <section id="dia_nascimento">
+                                <label for="dia_nascimento">Dia</label> <br>
+                                <input class="form-control respostas" id="input_dia" type="number" name="dia_nascimento" id="dia_nascimento" placeholder="Dia de nascimento" required>
+                            </section>
+
+                            <section id="mes_nascimento">
+                                <label for="mes_nascimento">Mês</label> <br>
+                                <select class="form-control respostas" name="mes_nascimento" id="mes_nascimento" required>
+                                            <option value="janeiro">Janeiro</option>
+                                            <option value="fevereiro">Fevereiro</option>
+                                            <option value="marco">Março</option>
+                                            <option value="abril">Abril</option>
+                                            <option value="maio">Maio</option>
+                                            <option value="junho">Junho</option>
+                                            <option value="julho">Julho</option>
+                                            <option value="agosto">Agosto</option>
+                                            <option value="setembro">Setembro</option>
+                                            <option value="outubro">Outubro</option>
+                                            <option value="novembro">Novembro</option>
+                                            <option value="dezembro">Dezembro</option>
+                                        </select>
+                            </section>
+
+                            <section id="ano_nascimento">
+                                <label for="ano_nascimento">Ano</label> <br>
+                                <input class="form-control respostas" id="input_ano" type="number" name="ano_nascimento" placeholder="Ano de nascimento" onblur="validaAno(this)" required>
+                            </section>
+
+                            <section id="genero">
+                                <label for="genero">Gênero</label> <br>
+                                <select class="form-control respostas" id="genero_input" name="genero">
+                                    <option value="">Selecione</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="indefinido">Não informado</option>
+                                </select>
+                            </section>
+
+                        </div>
+
+                        <div>
+                            <section id="cpf">
+                                <label for="cpf">CPF</label> <br>
+                                <input class="form-control respostas" onblur="VerificaCPF()" id="cpf_input" type="text" name="cpf" placeholder="Digite o seu CPF">
+                            </section>
+
+                            <section id="email">
+                                <label for="email">E-mail</label> <br>
+                                <input class="form-control respostas" onblur="validacaoEmail()" id="input_email" type="text" name="email" placeholder="Digite o seu email">
+                            </section>
+                        </div>
+
+                        <button class="btn btn-block btn-primary mt-4" onclick="blocoExibicao()">Enviar</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" id="bloco_confirmacao">
+                    <article id="article">
+                        <div class="mt-5">
+                            <p class="text-center lead titulos" id="confirmacaoDados"></p>
+                        </div>
+                        <a href="quemSomos.html" class="btn btn-primary" id="botaoContinuar" onclick="continuar()">CONTINUAR</a>
+                    </article>
+                    <div class="p-5">
+                        <img class="img-fluid logotipo" id="logoCadastrar" src="images/meu-estagio.png" alt="Logotipo Meu Estagio">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Fim Cadastro -->
+
+    </main>
+    <footer class="footer">
+        <h6 class="text-center d-flex align-content-center justify-content-center pt-5">© COPYRIGHT 2021 | MEU ESTÁGIO - TODOS OS DIREITOS RESERVADOS</h6>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

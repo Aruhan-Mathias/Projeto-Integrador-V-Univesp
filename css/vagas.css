@@ -1,0 +1,44 @@
+body {
+    overflow-x: hidden;
+}
+
+.btn-nao-quero {
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(251, 81, 81);
+    width: 40px;
+}
+
+.btn-quero {
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(199, 255, 125);
+    width: 40px;
+}
+
+.btn-passo {
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(242, 255, 125);
+    width: 40px;
+}
+
+.empresas {
+    height: 200px;
+    width: 100%;
+}
+
+.gradient-custom {
+    background: -webkit-linear-gradient(to right, rgb(69, 190, 194), rgba(0, 108, 248, 0.623));
+    background: linear-gradient(to right, rgb(54, 199, 224), rgba(0, 102, 255, 0.774));
+    max-height: 200px;
+}
+
+.saibaMais {
+    color: var(--azul-escuro);
+    cursor: pointer;
+}
+
+.saibaMais:hover {
+    color: var(--azul-footer);
+}

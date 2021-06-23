@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --azul: #00cad1;
+    --azul-escuro: #3777ac;
+    --azul-footer: #27599b;
+    --amarelo: #FFDE59;
+    --cinza-claro: #e0e0e0;
+    --cinza-escuro: #a8a6a623;
+}
+
+.logotipo {
+    border-radius: 245px;
+}
+
+.navegacao {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid var(--azul);
+    box-shadow: 1px 1px 9px var(--azul-escuro);
+    color: var(--azul-escuro);
+    margin: 0;
+}
+
+#navegacao3 ul li a {
+    color: var(--azul);
+    font-size: 1.2rem;
+}
+
+#navegacao3 ul li a:hover {
+    color: var(--azul-escuro);
+}
+
+.collapse {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    display: inline;
+    color: var(--azul);
+}
+
+.nav-link:hover {
+    color: var(--azul-escuro);
+}
+
+.nav-item a {
+    height: 55px;
+}

@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --verde: #7ED957;
+    --verde-escuro: #007b5e;
+    --amarelo: #FFDE59;
+    --amareloclaro: #a8a6a623;
+}
+
+#bloco_formulario {
+    background-color: var(--amareloclaro);
+    border-radius: 10px 0 0 10px;
+    padding: 25px;
+}
+
+#bloco_confirmacao {
+    background-color: var(--amareloclaro);
+    border-radius: 0 10px 10px 0;
+}
+
+#botaoContinuar {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+}
+
+.titulos {
+    color: var(--azul-escuro);
+}

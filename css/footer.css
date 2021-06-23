@@ -1,0 +1,8 @@
+.footer {
+    background-color: var(--azul-footer);
+    color: white;
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

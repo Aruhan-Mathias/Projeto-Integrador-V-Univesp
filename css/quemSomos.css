@@ -1,0 +1,9 @@
+/* Quem Somos */
+
+.bg-quemSomos {
+    background-color: var(--cinza-escuro);
+}
+
+#quemSomos {
+    display: none;
+}
